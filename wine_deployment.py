@@ -42,7 +42,6 @@ input_data = pd.DataFrame([[
     alcohol,
     quality
 ]], columns=model.feature_names_in_)
-
 if st.button("predict"):
     prediction = model.predict(input_data)[0]
     if prediction == "white":
